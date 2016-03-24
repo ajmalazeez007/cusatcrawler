@@ -46,8 +46,8 @@ foreach($html->find('a') as $element) {
 
   $Mail->AddAddress('ajmalazeez007@gmail.com'); // To:
   $Mail->isHTML( TRUE );
-  $Mail->Body    = 'New notification <br> <b>$inner </b>';
-  $Mail->AltBody = '$inner';
+  $Mail->Body    = 'New notification <br> <b>'.$inner.'</b>';
+  $Mail->AltBody = $inner;
   $Mail->Send();
   $Mail->SmtpClose();
 
