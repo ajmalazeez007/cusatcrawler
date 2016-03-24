@@ -34,7 +34,7 @@ $Mail = new PHPMailer();
   $Mail->SMTPDebug   = 2; // 2 to enable SMTP debug information
   $Mail->SMTPAuth    = TRUE; // enable SMTP authentication
   $Mail->SMTPSecure  = "ssl"; //Secure conection
-  $Mail->Port        = 465; // set the SMTP port
+  $Mail->Port        = 25; // set the SMTP port
   $Mail->Username    = 'cusatcrawler@gmail.com'; // SMTP account username
   $Mail->Password    = 'asd123##'; // SMTP account password
   $Mail->Priority    = 1; // Highest priority - Email priority (1 = High, 3 = Normal, 5 = low)
