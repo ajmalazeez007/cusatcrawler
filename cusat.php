@@ -36,7 +36,7 @@ $Mail = new PHPMailer();
   $Mail->SMTPSecure  = "ssl"; //Secure conection
   $Mail->Port        = 465; // set the SMTP port
   $Mail->Username    = 'cusatcrawler@gmail.com'; // SMTP account username
-  $Mail->Password    = 'asd123##'; // SMTP account password
+  $Mail->Password    = 'sqzhtorrchdkxcie'; // SMTP account password
   $Mail->Priority    = 1; // Highest priority - Email priority (1 = High, 3 = Normal, 5 = low)
   $Mail->CharSet     = 'UTF-8';
   $Mail->Encoding    = '8bit';
