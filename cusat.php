@@ -32,22 +32,22 @@ $Mail = new PHPMailer();
   
   $Mail->Host        = "smtp-pulse.com"; // Sets SMTP server
   $Mail->SMTPDebug   = 2; // 2 to enable SMTP debug information
-  $Mail->SMTPAuth    = FALSE; // enable SMTP authentication
+  $Mail->SMTPAuth    = TRUE; // enable SMTP authentication
   $Mail->SMTPSecure  = "ssl"; //Secure conection
   $Mail->Port        = 465; // set the SMTP port
   $Mail->Username    = 'ajmalazeez009@gmail.com'; // SMTP account username
   $Mail->Password    = 'LAErtsYsQSGTN'; // SMTP account password
-  $Mail->Priority    = 1; // Highest priority - Email priority (1 = High, 3 = Normal, 5 = low)
-  $Mail->CharSet     = 'UTF-8';
-  $Mail->Encoding    = '8bit';
+ // $Mail->Priority    = 1; // Highest priority - Email priority (1 = High, 3 = Normal, 5 = low)
+ // $Mail->CharSet     = 'UTF-8';
+ // $Mail->Encoding    = '8bit';
   $Mail->Subject     = 'Test Email Using Gmail';
-  $Mail->ContentType = 'text/html; charset=utf-8\r\n';
+ // $Mail->ContentType = 'text/html; charset=utf-8\r\n';
   $Mail->From        = 'ajmalazeez009@gmail.com';
   $Mail->FromName    = 'GMail Test';
-  $Mail->WordWrap    = 900; // RFC 2822 Compliant for Max 998 characters per line
+  //$Mail->WordWrap    = 900; // RFC 2822 Compliant for Max 998 characters per line
 
   $Mail->AddAddress('ajmalazeez007@gmail.com'); // To:
-  $Mail->isHTML( TRUE );
+ // $Mail->isHTML( TRUE );
   $Mail->Body    = 'Email Body';
   $Mail->AltBody = 'Alst Email Body';
   $Mail->Send();
