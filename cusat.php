@@ -25,7 +25,8 @@ foreach($html->find('a') as $element) {
 	if (mysqli_affected_rows($con)==1) {
 		echo "<br> Inserted ".$inner;
 
-
+}
+}
 $Mail = new PHPMailer();
   $Mail->IsSMTP(); // Use SMTP
   
@@ -59,10 +60,10 @@ $Mail = new PHPMailer();
     echo "true";
   }
 
-	}
+	
 
 
-}
+
   
 
   
