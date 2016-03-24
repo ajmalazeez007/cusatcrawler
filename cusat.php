@@ -32,7 +32,7 @@ $Mail = new PHPMailer();
   
   $Mail->Host        = "smtp.gmail.com"; // Sets SMTP server
   $Mail->SMTPDebug   = 2; // 2 to enable SMTP debug information
-  $Mail->SMTPAuth    = FALSE; // enable SMTP authentication
+  $Mail->SMTPAuth    = TRUE; // enable SMTP authentication
   $Mail->SMTPSecure  = "ssl"; //Secure conection
   $Mail->Port        = 465; // set the SMTP port
   $Mail->Username    = 'cusatcrawler@gmail.com'; // SMTP account username
