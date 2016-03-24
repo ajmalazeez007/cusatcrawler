@@ -11,7 +11,7 @@ $html = file_get_html('http://exam.cusat.ac.in/');
 
 // Find all links 
 
-$con = mysqli_connect('localhost','root','','cusat') or die('Couldnt connect');
+$con = mysqli_connect('localhost','root','asd123##','cusat') or die('Couldnt connect');
 
 
 foreach($html->find('a') as $element) {
