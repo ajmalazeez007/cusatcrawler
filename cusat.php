@@ -50,7 +50,7 @@ $smtp     = Mail::factory('smtp', array(
 ));
 $mail     = $smtp->send($to, $headers, $body);
 if (PEAR::isError($mail)) {
-    echo ("
+    echo ("Error
 " . $mail->getMessage() . "
 
 ");
