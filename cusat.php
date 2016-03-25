@@ -60,7 +60,7 @@ foreach($html->find('a') as $element) {
   }
 
 }
-
+}
 if (!$updates) {
 	echo " No new notification";
 }
