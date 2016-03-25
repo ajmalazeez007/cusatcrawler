@@ -2,7 +2,7 @@
 // Create DOM from URL or file
 include('Simplehtmldom/simple_html_dom.php');
 require 'PHPMailer/PHPMailerAutoload.php';
-
+$updates=false;
 $html = file_get_html('http://exam.cusat.ac.in/');
 
 // Find all images 
@@ -23,6 +23,7 @@ foreach($html->find('a') as $element) {
 	mysqli_query($con,$query);
 
 	if (mysqli_affected_rows($con)==1) {
+		$updates=true;
 		echo "<br> Inserted ".$inner;
 
 		$Mail = new PHPMailer();
@@ -59,8 +60,10 @@ foreach($html->find('a') as $element) {
   }
 
 }
-}
 
+if (!$updates) {
+	echo " No new notification";
+}
 
 	
 
